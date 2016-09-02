@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :members
+  resources :members
   get 'firstpage/home'
 
   get 'firstpage/about'
