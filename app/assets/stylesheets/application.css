@@ -40,7 +40,7 @@ a {
   border: 0;
 }
 .btn.btn-primary {
-  background-color: #52b6ec;
+    background-color: rgba(82, 182, 236, .6);
 }
 .btn.btn-primary:hover,
 .btn.btn-primary.active {
@@ -64,7 +64,7 @@ a:focus {
   z-index: 99999;
 }
 #main-slider {
-  background-image: url(images/background/coolplum11.png);
+  background-image: url(images/background/home.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
@@ -138,7 +138,8 @@ a:focus {
   color: #fff;
 }
 #contact .box {
-  background-color: #222;
+  /*background-color: #222;*/
+    background: rgba(160, 160, 160, .3);
   color: #999;
 }
 #contact .box h1,
@@ -173,7 +174,7 @@ a:focus {
 .box {
   padding: 50px 30px;
   background: #fff;
-  border-bottom: 1px solid #e9e9e9;
+  /*border-bottom: 1px solid #e9e9e9;*/
   position: relative;
 }
 .box.first {
@@ -192,7 +193,8 @@ a:focus {
   font-size: 48px;
 }
 #portfolio .box {
-  background: #f3f3f3;
+  background: rgba(160, 160, 160, .3);
+  /*background: none;*/
 }
 .portfolio-items,
 .portfolio-filter {
@@ -233,9 +235,10 @@ a:focus {
 .portfolio-item .item-inner {
   margin: 0 20px 20px 0;
   text-align: center;
-  background: #fff;
+  background: linear-gradient(180deg, rgba(5,5,5,.6), rgba(5,5,5,0));
+  /*background:  rgba(5, 5, 5, .6);*/
   padding: 10px;
-  border-bottom: 1px solid #e1e1e1;
+  /*border-bottom: 1px solid #e1e1e1;*/
 }
 .portfolio-item img {
   width: 100%;
@@ -257,7 +260,7 @@ a:focus {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   vertical-align: middle;
   -webkit-transition: opacity 300ms;
@@ -371,6 +374,7 @@ a:focus {
 }
 #services .box {
   padding-bottom: 0;
+  background: rgba(160, 160, 160, .3);
 }
 #services .row > div {
   margin-bottom: 50px;
@@ -519,7 +523,7 @@ a:focus {
 .navbar-default .navbar-nav > li.active:hover > a:focus,
 .navbar-default .navbar-nav > li:hover > a:focus,
 .navbar-default .navbar-nav > li:focus > a:focus {
-  background-color: #52b6ec;
+  background-color: rgba(82, 182, 236, .6);
   color: #fff;
 }
 .icon-lg {
@@ -680,4 +684,42 @@ textarea#message {
 
 .lead{
   height:100px;
+}
+
+.dark-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+#navbar{
+    background-color: rgba(20, 20, 20, .5);
+}
+
+#portfolio{
+    background-image: url(images/background/parallax.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-shadow: 0 0 1px gray;
+    }
+#contact{
+    background-image: url(images/background/coolplum.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-shadow: 0 0 1px gray;
+}
+#services, #about-us{
+    background: rgba(0,0,0,.8);
+}
+#about-us .box{
+    background: rgba(160, 160, 160, .1);
 }
