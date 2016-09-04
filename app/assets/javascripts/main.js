@@ -53,5 +53,50 @@ jQuery(function($) {
 		});
 	});
 
-	$('.status').hide();
+    $('.status').hide();
+
+    $(function () {
+
+        function initMap() {
+
+            var location = new google.maps.LatLng(41.996464, 21.435643);
+
+            var mapCanvas = document.getElementById('map');
+            var mapOptions = {
+                center: location,
+                zoom: 16,
+                panControl: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                animation:google.maps.Animation.DROP
+            });
+
+            var contentString = '<div class="info-window">' +
+                '<a href="http://cool-ruby.herokuapp">Cool Plum</a>' +
+                '<div class="info-content">' +
+                'Kej Dimitar Vlahov 5<br> Skopje 1500, Macedonia' +
+                '</div>' +
+                '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString,
+                maxWidth: 400
+            });
+
+            marker.addListener('click', function () {
+                infowindow.open(map, marker);
+            });
+
+
+        }
+
+        google.maps.event.addDomListener(window, 'load', initMap);
+
+    });
+
 });
