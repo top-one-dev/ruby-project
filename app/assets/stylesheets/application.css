@@ -235,12 +235,12 @@ a:focus {
   width: 16%;
 }
 .portfolio-item .item-inner {
-  margin: 0 20px 20px 0;
-  text-align: center;
-  background: linear-gradient(180deg, rgba(5,5,5,.6), rgba(5,5,5,0));
-  /*background:  rgba(5, 5, 5, .6);*/
-  padding: 10px;
-  /*border-bottom: 1px solid #e1e1e1;*/
+    margin: 0 20px 20px 0;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(5, 5, 5, .6), rgba(5, 5, 5, 0));
+    /*background:  rgba(5, 5, 5, .6);*/
+    padding: 10px;
+    /*border-bottom: 1px solid #e1e1e1;*/
 }
 .portfolio-item img {
   width: 100%;
@@ -254,6 +254,7 @@ a:focus {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  color: #c0c0c0 !important;
 }
 .portfolio-item .overlay {
   position: absolute;
